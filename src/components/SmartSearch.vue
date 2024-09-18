@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 items-center lg:items-start lg:ml-56">
    
       <div class="w-full md:w-1/2 flex justify-center md:justify-start">
-        <img :src="img" alt="app feature" class="w-4/6 md:w-5/6 lg:w-8/12 h-auto" />
+        <img :src="img" alt="app feature" class="w-2/6 md:w-3/6 lg:w-8/12 h-auto" />
       </div>
 
       
