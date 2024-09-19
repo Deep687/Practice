@@ -14,9 +14,13 @@
       </button>
     </div>
     <div v-if="isSmallScreen && isMenuOpen" class="fixed inset-0 bg-black bg-opacity-50 z-10">
-      <div class="w-64 h-full bg-white shadow-md flex flex-col p-6">
+      <div class="w-64 h-full bg-white shadow-md flex flex-col p-6 items-center">
         <p v-for="(item, index) in menuItems" :key="index" class="hover:text-gray-400 cursor-pointer text-lg py-2">{{ item }}</p>
-        <button class="bg-blue-800 text-white rounded-3xl py-2 px-6 hover:bg-blue-700 text-sm mt-4">Try for free</button>
+        
+        <div class="bg-blue-800 text-white rounded-3xl py-2 px-6 hover:bg-blue-700 text-sm ">
+          <router-link to='/practice'>Project 2</router-link>
+        </div>
+       
       
         <button @click="toggleMenu" class="mt-auto text-red-600 text-sm underline">Close Menu</button>
       </div>
@@ -25,9 +29,13 @@
  
     <div v-if="!isSmallScreen" class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
       <p v-for="(item, index) in menuItems" :key="index" class="hover:text-gray-400 cursor-pointer text-lg md:text-base py-2 ml-5">{{ item }}</p>
-      <button class="bg-blue-800 text-white rounded-3xl py-2 px-6 hover:bg-blue-700 text-xs md:text-sm flex items-center mt-2">
-        Try for free
-      </button>
+      <div class="bg-blue-800 text-white rounded-3xl py-2 px-6 hover:bg-blue-700 text-sm ">
+         <router-link to ='/practice'>
+  Project 2
+     </router-link>
+      </div>
+     
+      
     </div>
   </div>
 </template>

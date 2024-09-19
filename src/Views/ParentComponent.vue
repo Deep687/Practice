@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import ChildrenComponent from './ChildrenComponent.vue';
+import ChildrenComponent from '../components/ChildrenComponent.vue';
 
 
 let postsData = ref([]); 

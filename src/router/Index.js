@@ -1,16 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import App from '../App.vue';
-import ParentComponent from '../components/ParentComponent.vue';
+import Home from '../Views/Home.vue';
+import ParentComponent from '../Views/ParentComponent.vue';
 
-// Define routes
 const routes = [
-  { path: '/', component: App },
+  { path: '/', component:Home  },
   { path: '/practice', component: ParentComponent },
+ 
 ];
 
-
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(
+    '/','/practice' 
+  ),
   routes,
 });
 
